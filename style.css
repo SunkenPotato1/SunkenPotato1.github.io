@@ -1,0 +1,191 @@
+:root {
+	--text: #f2f0f4;
+	--text_muted: #a9a7aa;
+
+	--background: #160b17;
+	--backgrount_transparent: #160b17ee;
+
+	--primary: #4e3673;
+	--primary_mute: #4e3673dd;
+
+	--secondary: #733637;
+	--secondary_mute: #733637dd;
+	
+	--accent: #6d27a0;
+
+
+	--default_opacity: 50%;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	color: var(--text);
+
+	font-feature-settings: "kern" on, "liga" on;
+	text-rendering: optimizeLegibility;
+	font-size: 16px;
+
+	font-family: "Inter", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+	font-variation-settings: "slnt" 0;
+
+
+}
+
+body {
+	font-family: "Poppins", sans-serif;
+	background-color: var(--background);
+	padding-top: 60px;
+
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+p {
+	font-size: 16px;
+}
+
+a {
+	font-size: 16px;
+}
+
+hr {
+	height:2px;
+	border-width:0;
+	background-color:var(--accent);
+
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	margin: 0;
+}
+
+h2 {
+	text-align: center;
+	font-size: 32px;
+	font-weight: 900;
+}
+
+.margin {
+	margin-right: 12%;
+	margin-left: 12%;
+}
+
+
+#desktop-nav {
+	align-items: center;
+	display: flex;
+
+	height: 70px;
+	width: 100%;
+
+	justify-content: space-between;
+	background-color: var(--backgrount_transparent);
+
+	position: fixed;
+	top: 0;
+	z-index: 1030; 
+}
+
+#logo {
+	text-align: left;
+	justify-self: left;
+
+	margin-left: 20px;
+
+	font-size: 28px;
+
+}
+
+#socials-container {
+
+	align-items: center;
+
+	justify-content: right;
+
+	display:flex;
+	float:right;
+
+}
+
+#about {
+	background-color: var(--accent);
+	margin-top: 50px;
+}
+
+#contact {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+
+	color: var(--text_muted);
+	background-color: var(--primary);
+
+	height: 70px;
+
+	margin-top: 30px;
+
+	
+}
+
+#contact * {
+	color: var(--text_muted);
+}
+
+.icon {
+	height: 30px;
+	align-self: center;
+	margin: 10px;
+}
+
+.game-showcase {
+	display: flex;
+	justify-content: center;
+
+	padding: 50px;
+
+	margin-top: 40px;
+	margin-bottom: 40px;
+
+	border-radius: 35px;
+
+	background-color: var(--primary_mute);
+	color: var(--text);
+
+}
+
+.game-showcase * {
+	width: 100%;
+	color: inherit;
+	opacity: 1;
+}
+
+.game-showcase img {
+	margin: 10px;
+	width: 150%;
+	height: fit-content;
+}
+
+.game-showcase h2 {
+	margin: 10px;
+	font-size: 32px;
+	width: 100%;
+	height: fit-content;
+	text-align: center;
+
+}
+
+.game-showcase div {
+	margin: 10px;
+}
+
+.game-showcase li {
+	margin-left: 20px;
+	font-size: 16px;
+}
